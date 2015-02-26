@@ -1,6 +1,7 @@
 # TableVIew_FilterBar
 
-[![Version](https://img.shields.io/cocoapods/v/RJImageLoader.svg?style=flat)](http://cocoadocs.org/docsets/RJImageLoader)
+
+![demo](http://cdn.makeagif.com/media/2-26-2015/0rmlEA.gif)
 
 TableVIew_FilterBar is a Quick way to filter your tables view data.
 I created this project for the need to filter two deffrent paramiters.
