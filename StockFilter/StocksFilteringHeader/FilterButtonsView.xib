@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FilterButtonsView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter One" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hV-MH-RBX">
+                    <rect key="frame" x="4" y="14" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="63z-sE-Aeg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1169389428" green="0.4677974433" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIlter Two" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wh8-U9-NEC">
+                    <rect key="frame" x="163" y="14" width="59" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="59" id="VgP-x3-7ap"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1169389428" green="0.4677974433" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL8-W6-TjS" customClass="FilterButton">
+                    <rect key="frame" x="67" y="7" width="93" height="36"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="93" id="Blw-Sq-0ME"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="---">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9F-Hg-0yO" customClass="FilterButton">
+                    <rect key="frame" x="224" y="7" width="93" height="36"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="---">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6hV-MH-RBX" secondAttribute="bottom" constant="15" id="LeZ-PI-IaM"/>
+                <constraint firstItem="iL8-W6-TjS" firstAttribute="top" secondItem="k9F-Hg-0yO" secondAttribute="top" id="Qhz-FR-Fhj"/>
+                <constraint firstItem="Wh8-U9-NEC" firstAttribute="baseline" secondItem="6hV-MH-RBX" secondAttribute="baseline" id="Ruh-Ok-NQM"/>
+                <constraint firstItem="6hV-MH-RBX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="YhN-S4-Gy9"/>
+                <constraint firstItem="6hV-MH-RBX" firstAttribute="firstBaseline" secondItem="Wh8-U9-NEC" secondAttribute="firstBaseline" id="ZXF-0D-nqz"/>
+                <constraint firstItem="iL8-W6-TjS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bM7-5q-gKu"/>
+                <constraint firstItem="k9F-Hg-0yO" firstAttribute="baseline" secondItem="iL8-W6-TjS" secondAttribute="firstBaseline" id="gE1-Fk-fRw"/>
+                <constraint firstItem="k9F-Hg-0yO" firstAttribute="leading" secondItem="Wh8-U9-NEC" secondAttribute="trailing" constant="2" id="ihl-1S-SUF"/>
+                <constraint firstItem="iL8-W6-TjS" firstAttribute="leading" secondItem="6hV-MH-RBX" secondAttribute="trailing" constant="3" id="ohw-QU-NS5"/>
+                <constraint firstItem="6hV-MH-RBX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="pzh-DE-kWW"/>
+                <constraint firstItem="Wh8-U9-NEC" firstAttribute="leading" secondItem="iL8-W6-TjS" secondAttribute="trailing" constant="3" id="vAz-FY-x4R"/>
+                <constraint firstAttribute="trailing" secondItem="k9F-Hg-0yO" secondAttribute="trailing" constant="3" id="wlf-8x-bdk"/>
+                <constraint firstItem="iL8-W6-TjS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="yQv-Cb-lxH"/>
+                <constraint firstItem="iL8-W6-TjS" firstAttribute="baseline" secondItem="k9F-Hg-0yO" secondAttribute="firstBaseline" id="zZN-yM-3mo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnFilterOne" destination="iL8-W6-TjS" id="d5V-9L-42j"/>
+                <outlet property="btnFilterTwo" destination="k9F-Hg-0yO" id="N7m-EY-8Ft"/>
+                <outlet property="lblFilterOne" destination="6hV-MH-RBX" id="7Yu-7T-Sdb"/>
+                <outlet property="lblFilterTwo" destination="Wh8-U9-NEC" id="dCQ-HV-z7n"/>
+            </connections>
+            <point key="canvasLocation" x="409" y="479"/>
+        </view>
+    </objects>
+</document>
